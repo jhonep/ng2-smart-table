@@ -1,22 +1,21 @@
 {
-  "name": "ng2-smart-table",
-  "version": "1.3.5",
+  "name": "ng6-smart-table-updated",
+  "version": "1.3.3",
   "description": "Angular Smart Table",
   "main": "./bundles/table.umd.js",
   "module": "./index.js",
   "typings": "./index.d.ts",
-  "author": "akveo",
+  "author": "Jhon Portocarrero <engineer.jepc@gmail.com>",
+  "homepage": "http://jhonep.github.io/ng2-smart-table/",
   "license": "MIT",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+http://akveo.github.io/ng2-smart-table.git"
+    "url": "git+http://jhonep.github.io/ng2-smart-table.git"
   },
   "bugs": {
-    "url": "http://akveo.github.io/ng2-smart-table/issues"
+    "url": "http://jhonep.github.io/ng2-smart-table/issues"
   },
-  "homepage": "http://akveo.github.io/ng2-smart-table/#readme",
   "keywords": [
     "angular",
     "typescript",
@@ -31,5 +30,8 @@
     "@angular/common": "^6.0.1",
     "@angular/core": "^6.0.1",
     "@angular/forms": "^6.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }

@@ -26,26 +26,33 @@
       overflow: auto;
       word-break: normal;
       word-break: keep-all;
-
+      //border-width: 3px;
+      //border-color: #000000;
       tr {
         th {
           font-weight: bold;
+          //border-width: 3px;
+          //border-color: #000000;
         }
         section {
           font-size: .75em;
           font-weight: bold;
+          //border-width: 3px;
+          //border-color: #000000;
         }
         td,
         th {
           font-size: .875em;
           margin: 0;
           padding: 0.5em 1em;
+          //border-width: 3px;
+          //border-color: #000000;
         }
       }
     }
 
     a {
-      color: #1e6bb8;
+      color: #000000;
       text-decoration: none;
       &:hover {
         text-decoration: underline;

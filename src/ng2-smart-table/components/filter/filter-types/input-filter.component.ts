@@ -12,7 +12,7 @@ import { DefaultFilter } from './default-filter';
       [formControl]="inputControl"
       class="form-control"
       type="text"
-      placeholder="{{ column.title }}"/>
+      placeholder="{{ column.filterPlaceHolder }}"/>
   `,
 })
 export class InputFilterComponent extends DefaultFilter implements OnInit {
@@ -29,7 +29,7 @@ export class InputFilterComponent extends DefaultFilter implements OnInit {
     }
     this.inputControl.valueChanges
       .pipe(
-        skip(1),
+        // skip(1),
         distinctUntilChanged(),
         debounceTime(this.delay),
       )

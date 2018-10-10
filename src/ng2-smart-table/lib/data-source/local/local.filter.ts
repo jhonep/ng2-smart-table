@@ -8,8 +8,21 @@ export class LocalFilter {
     const filter: Function = customFilter ? customFilter : this.FILTER;
 
     return data.filter((el) => {
-      const value = typeof el[field] === 'undefined' || el[field] === null ? '' : el[field];
+      // Holds the data
+      // @ts-ignore
+      let data: any = el;
+
+      // Split the property string
+      const propertyList: string[] = field.split('.');
+
+      // Access inner properties
+      for(const property of propertyList) {
+        data = data[property];
+      }
+
+      const value = typeof data === 'undefined' || data === null ? '' : data;
       return filter.call(null, value, search);
     });
   }
 }
+
