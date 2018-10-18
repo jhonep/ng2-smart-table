@@ -2,7 +2,7 @@
 
 # ng2-smart-table-update Component
 
-ng2-smart-table-updated. This component is based on ng2-smart-table   by [Akveo team](http://akveo.com/). What I have done in this update is fix the problem with filter and sort for custom columns. 
+This component is based on ng2-smart-table   by [Akveo team](http://akveo.com/). What I have done in this update is fix the problem with filter and sort for custom columns. 
 Now is we have this kind of data.
 ```
 data = [
