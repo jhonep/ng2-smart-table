@@ -1,9 +1,73 @@
 [![Build Status](https://travis-ci.org/akveo/ng2-smart-table.svg?branch=master)](https://travis-ci.org/akveo/ng2-smart-table)
 
-# Angular Smart Table Component
+# ng2-smart-table-update Component
 
-ng2-smart-table component made with :heart:  by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get latest news about this component first!
+ng2-smart-table-updated. This component is based on ng2-smart-table   by [Akveo team](http://akveo.com/). What I have done in this update is fix the problem with filter and sort for custom columns. 
+Now is we have this kind of data.
+```
+data = [
+  {
+    id: 1,
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "Sincere@april.biz",`
+    address:{
+      city: "houston",
+      state: "texas"
+    } 
+  },
+  {
+    id: 2,
+    name: "Ervin Howell",
+    username: "Antonette",
+    email: "Shanna@melissa.tv"
+    address:{
+      city: "miami",
+      state: "floria"
+    } 
+  },
+  
+  // ... list of items
+  
+  {
+    id: 11,
+    name: "Nicholas DuBuque",
+    username: "Nicholas.Stanton",
+    email: "Rey.Padberg@rosamond.biz"
+        address:{
+          city: "houston",
+          state: "texas"
+        } 
+  }
+];
+```
 
+we can configure our table and filter and sort works correctly. This is an example:
+    
+```
+settings = {
+  columns: {
+    id: {
+      title: 'ID'
+    },
+    name: {
+      title: 'Full Name'
+    },
+    username: {
+      title: 'User Name'
+    },
+    email: {
+      title: 'Email'
+    },
+    'address.city':{
+      title: 'city',
+      valuePrepareFunction: (cell, row) => {
+        return row.address.city;
+      },
+    }
+  }
+};
+```
 ### Demo
 
 <a target="_blank" href="https://akveo.github.io/ng2-smart-table/">Live Demo</a>
