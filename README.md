@@ -25,19 +25,6 @@ data = [
       city: "miami",
       state: "floria"
     } 
-  },
-  
-  // ... list of items
-  
-  {
-    id: 11,
-    name: "Nicholas DuBuque",
-    username: "Nicholas.Stanton",
-    email: "Rey.Padberg@rosamond.biz"
-        address:{
-          city: "houston",
-          state: "texas"
-        } 
   }
 ];
 ```
